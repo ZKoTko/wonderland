@@ -725,7 +725,6 @@ nav {
 .contact-schedule {
     border: 2px solid #FF92E0;
     border-radius: 36px;
-    max-width: 535px;
     margin: 0 auto;
     padding-top: 50px;
     margin-bottom: 60px;
@@ -749,7 +748,9 @@ nav {
     font-weight: 300;
     letter-spacing: 0.03em;
     text-align: center;
-
+}
+.contact-content .container {
+    padding: 0;
 }
 .contact-schedule-item:first-child, .contact-schedule-item:nth-child(3) {
     color: #FF92E0;
@@ -760,14 +761,27 @@ nav {
 .contact-schedule-alert {
     display: flex;
     text-align: end;
-    justify-content: end;
+    justify-content: space-between;
     margin-bottom: 50px;
     padding-right: 30px;
+    padding-left: 30px;
 }
-.contact-schedule-alert-item {
+.contact-schedule-alert-item-pink {
+    padding: 9px 20px;
+    background: #FFC3EE;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-align: end;
+    color: #C72E9C;
+    width: fit-content;
+    border-radius: 40px;
+    transform: translateY(-20px);
+}
+.contact-schedule-alert-item-blue {
     padding: 9px 20px;
     background: #CDF1FF;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.03em;
     text-align: end;
@@ -775,6 +789,18 @@ nav {
     width: fit-content;
     border-radius: 40px;
     transform: translateY(-20px);
+}
+.contact-schedule-alert-item:first-child {
+    margin-right: 5px;
+}
+.contact-schedule-alert-item-l {
+    margin-right: auto;
+}
+.contact-schedule-alert-item-r {
+    margin-left: auto;
+}
+.contact-schedule-alert-item {
+    text-align: center;
 }
 .contact-content h4 {
     font-size: 24px;
@@ -892,6 +918,9 @@ footer {
     }
     header {
         height: 950px; 
+    }
+    .contact-schedule {
+        max-width: 580px;
     }
 }
 @media (min-width: 1921px) {
