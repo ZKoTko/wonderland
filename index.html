@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .slick-next {
+            width: 200px !important;
+            height: 100% !important;
+            top: 0 !important;
+            right: 0 !important;
+            transform: translate(0px, 0px) !important;
+            z-index: 1 !important;
+        }
+        .slick-prev {
+            width: 200px !important;
+            height: 100% !important;
+            top: 0 !important;
+            left: 0 !important;
+            transform: translate(0px, 0px) !important;
+            z-index: 1 !important;
+        }
+    </style>
+  </head>
+  <body>
+
+    <!--First screen-->
+    <header>
+        <div class="banner-back-main" style="background: url(assets/img/banner-back-main.svg);"></div>
+        <div class="banner-back-1" style="background: url(assets/img/banner-back-1.svg);"></div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news-section">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Booking</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-buttons">
+                        <a href="https://www.instagram.com/wonderland.ubud?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><button class="btn"><img src="assets/img/navicon1.svg" alt="navicon">Instagram</button></a>
+                        <a href="#contact-section"><button class="btn"><img src="assets/img/navicon2.svg" alt="navicon">Google Maps</button></a>
+                        <a href="#"><button class="btn"><img src="assets/img/navicon3.svg" alt="navicon">WhatsApp</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="container">
+                <div class="banner-content">
+                    <img src="assets/img/bannertitle.svg" alt="bannertitle">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Content-->
+    <main>
+
+        <section class="restaurant-section">
+                <img src="assets/img/restaurant-back-1.svg" alt="restaurant-back" class="restaurant-back-1">
+                <img src="assets/img/restaurant-back-2.svg" alt="restaurant-back" class="restaurant-back-2">
+                <div class="restaurant-slider">
+                    <div class="restaurant-slide" style="background: url(assets/img/slider1.svg);"></div>
+                    <div class="restaurant-slide" style="background: url(assets/img/slider1.svg);"></div>
+                    <div class="restaurant-slide" style="background: url(assets/img/slider1.svg);"></div>
+                    <div class="restaurant-slide" style="background: url(assets/img/slider1.svg);"></div>
+                    <div class="restaurant-slide" style="background: url(assets/img/slider1.svg);"></div>
+                    <div class="restaurant-slide" style="background: url(assets/img/slider1.svg);"></div>
+                </div>
+                <div class="restaurant-text">
+                    <h3>Restaurant</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#"><button class="btn">Booking</button></a>
+                </div>
+        </section>
+
+        <section class="bar-section">
+                <div class="bar-text-wrapper">
+                    <img src="assets/img/bar-back-1.svg" alt="bar-back" class="bar-back-1">
+                    <img src="assets/img/bar-back-2.svg" alt="bar-back" class="bar-back-2">
+                    <img src="assets/img/bar-back-3.svg" alt="bar-back" class="bar-back-3">
+                    <div class="bar-text">
+                        <h3>Bar</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut labore et dolore magna aliqua.</p>
+                        <a href="#"><button class="btn">Booking</button></a>
+                    </div>
+                </div>
+                <div class="bar-slider">
+                    <div class="bar-slide" style="background: url(assets/img/slider2.svg);"></div>
+                    <div class="bar-slide" style="background: url(assets/img/slider2.svg);"></div>
+                    <div class="bar-slide" style="background: url(assets/img/slider2.svg);"></div>
+                    <div class="bar-slide" style="background: url(assets/img/slider2.svg);"></div>
+                </div>       
+        </section>
+
+        <section class="choise-section">
+            <div class="choise-resto">
+                <div class="choise-resto-title">
+                    <h2>Resto</h2>
+                </div>
+                <div class="choise-items-wrapper">
+                    <div class="choise-item"></div>
+                </div>
+            </div>
+            <div class="choise-bar">
+                <div class="choise-bar-title">
+                    <h2>Bar</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-section" style="background: url(assets/img/events-bg.svg);">
+            <div class="container">
+                <div class="events-title">
+                    <h3>Events</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-section" id="news-section">
+            <div class="container">
+                <div class="news-items-wrapper row">
+                    <a class="news-item-wrapper col-lg-6" href="#">
+                        <div class="news-item" style="background: url(assets/img/news1.svg);">
+                            <div class="news-item-text-bar" style="background-color: rgba(31, 53, 66, 0.7);color: #FF92E0;">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <span>01.12</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="news-item-wrapper col-lg-6" href="#">
+                        <div class="news-item" style="background: url(assets/img/news2.svg);">
+                            <div class="news-item-text-bar" style="background-color: rgba(226, 149, 0, 0.91);color: #FFE09C;">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <span>14.07</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="news-item-wrapper col-lg-6" href="#">
+                        <div class="news-item" style="background: url(assets/img/news3.svg);">
+                            <div class="news-item-text-bar" style="background-color: rgba(31, 53, 66, 0.6);color: #FFEAF9;">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <span>29.12</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="news-item-wrapper col-lg-6" href="#">
+                        <div class="news-item" style="background: url(assets/img/news4.svg);"></div>
+                    </a>
+                    <a class="news-item-wrapper col-lg-6" href="#">
+                        <div class="news-item" style="background: url(assets/img/news5.svg);">
+                            <div class="news-item-text-bar" style="background-color: rgba(33, 129, 166, 0.89);color: #CDF1FF;">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <span>03.02</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="news-item-wrapper col-lg-6" href="#">
+                        <div class="news-item" style="background: url(assets/img/news6.svg);">
+                            <div class="news-item-text-bar" style="background-color: rgba(255, 195, 238, 0.78);color: #F8532E;">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <span>17.02</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <img src="assets/img/team-back-1.svg" alt="team-back" class="team-back-1">
+            <img src="assets/img/team-back-2.svg" alt="team-back" class="team-back-2">
+            <img src="assets/img/team-back-3.svg" alt="team-back" class="team-back-3">
+            <div class="container">
+                <h2>Team</h2>
+                <div class="team-slider">
+                    <div class="team-slide">
+                        <div class="team-slide-wrapper row">
+                            <div class="team-slide-img-wrapper col-6">
+                                <div class="team-slide-img" style="background: url(assets/img/team.svg);"></div>
+                            </div>
+                            <div class="team-slide-content col-5">
+                                <h3>Taiko Numo</h3>
+                                <h4>Brand Chef</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-slide">
+                        <div class="team-slide-wrapper row">
+                            <div class="team-slide-img-wrapper col-6">
+                                <div class="team-slide-img" style="background: url(assets/img/team.svg);"></div>
+                            </div>
+                            <div class="team-slide-content col-5">
+                                <h3>Taiko Numo</h3>
+                                <h4>Brand Chef</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-slide">
+                        <div class="team-slide-wrapper row">
+                            <div class="team-slide-img-wrapper col-6">
+                                <div class="team-slide-img" style="background: url(assets/img/team.svg);"></div>
+                            </div>
+                            <div class="team-slide-content col-5">
+                                <h3>Taiko Numo</h3>
+                                <h4>Brand Chef</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ig-section">
+            <div class="container">
+                <div class="ig-header">
+                    <div class="ig-title">
+                        <img src="assets/img/ig-logo.svg" alt="ig-logo">
+                        <a href="https://www.instagram.com/wonderland.ubud?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@Wonderland.Ubud</a>
+                    </div>
+                    <a href="https://www.instagram.com/wonderland.ubud?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><button class="btn"><img src="assets/img/ig-btn.svg" alt="ig-btn">Follow on Instagram</button></a>
+                </div>
+                <div class="ig-items">
+                    <div class="ig-items-img-wrapper" style="background: url(assets/img/ig-import-img.svg);background-position: center !important;background-repeat: no-repeat !important;background-size: contain !important;width:100%;height: 880px;margin-bottom: 45px;"></div>
+                </div>
+                <div class="ig-more-btn"><a href="https://www.instagram.com/wonderland.ubud?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><button class="btn">Load more</button></a></div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact-section">
+            <div class="contact-wrapper row">
+                <div class="contact-content col-6">
+                    <div class="container">
+                        <h3>Location & Hours</h3>
+                        <div class="contact-schedule row">
+                            <div class="col-6 contact-schedule-item">
+                                <h5>Breakfast:</h5>
+                                <p>08:00—12:00</p>              
+                            </div>
+                            <div class="col-6 contact-schedule-item">
+                                <h5>Bar:</h5>
+                                <p>08:00—12:00</p>
+                                <h6>(Tuesday — Wednesday)</h6>
+                            </div>
+                            <div class="col-6 contact-schedule-item">
+                                <h5>Dinner:</h5>
+                                <p>08:00—12:00</p>
+                            </div>
+                            <div class="col-6 contact-schedule-item">
+                                <p>08:00—12:00</p>
+                                <h6>(Tuesday — Wednesday)</h6>
+                            </div>
+                            <div class="col-12 contact-schedule-alert">
+                                <div class="contact-schedule-alert-item">Bar is closed on Monday</div>
+                            </div>
+                        </div>
+                        <h4>123, Ubud,Bali <br>
+                            Wonderland street 17</h4>
+                        <h4>+ 123456789</h4>
+                    </div>
+                </div>
+                <div class="contact-map col-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d861.23270244995!2d122.51493627918323!3d-3.997774873656943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d988d88c7c7d491%3A0xe3879f81629fc0bd!2sPO.Sabar%20Menanti!5e0!3m2!1sen!2sge!4v1720856063854!5m2!1sen!2sge" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper row">
+                <div class="footer-item col-3">
+                    <img src="assets/img/footer-logo.svg" alt="footer-logo">
+                </div>
+                <div class="footer-item col-3">
+                    <h6>Waiting for you <br> in Wonderland...</h6>
+                </div>
+                <div class="footer-item col-3 footer-links">
+                    <a href="#">Menu</a>
+                    <a href="#">Events</a>
+                    <a href="#">Booking</a>
+                </div>
+                <div class="footer-item col-3 footer-links">
+                    <a href="#"><img src="assets/img/footer-link-1.svg" alt="footer-link">Instagram</a>
+                    <a href="#"><img src="assets/img/footer-link-2.svg" alt="footer-link">Google Maps</a>
+                    <a href="#"><img src="assets/img/footer-link-3.svg" alt="footer-link">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/sliders.js"></script>
+  </body>
+</html>
