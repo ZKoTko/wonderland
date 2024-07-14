@@ -423,9 +423,10 @@ nav {
     line-height: 85px;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 100px;
     color: #FFF1FB;
     padding-top: 80px;
+
 }
 .choise-resto-title h2{
     font-family: 'Silk-Flower';
@@ -434,9 +435,44 @@ nav {
     line-height: 85px;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 100px;
     color: #2181A6;
     padding-top: 80px;
+}
+.choise-item-big {
+    width: 300px !important;
+    height: 430px !important;
+    margin-right: 40px;
+    margin-bottom: 0 !important; 
+    transition: all .2s ease-in;
+}
+.choise-item-big:hover {
+    width: 320px !important;
+    height: 450px !important;
+}
+.choise-item {
+    width: 150px;
+    height: 200px;
+    margin-bottom: 30px;
+    transition: all .2s ease-in;
+}
+.choise-item:hover {
+    width: 170px;
+    height: 220px;
+}
+.choise-item {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.choise-items-wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+}
+.chouse-item-wrapper-inner {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Events */
