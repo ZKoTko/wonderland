@@ -45,6 +45,16 @@ header {
 nav {
     padding-top: 25px !important;
 }
+.navbar-toggler {
+    border: 0;
+    box-shadow: none !important;
+}
+.container-navbar {
+    width: 100%;
+    padding: 0 40px;
+    justify-content: flex-end;
+    display: flex;
+}
 .nav-link {
     color: #FFF1FB;
     opacity: 1 !important;
@@ -81,7 +91,7 @@ nav {
 .navbar-buttons button:hover {
     border: 1px solid #fff;
 }
-.navbar-buttons button img {
+.navbar-buttons button svg {
     margin-right: 8px;
 }
 .navbar-buttons {
@@ -121,6 +131,7 @@ nav {
 .banner-back-main {
     position: absolute;
     left: 0;
+    bottom: 0;
     height: 100%;
     width: 100%;
     background-repeat: no-repeat !important;
@@ -403,9 +414,8 @@ nav {
 
 /* Choise */
 .choise-section {
-    height: 780px;
     display: flex;
-
+    height: 915px;
 }
 .choise-resto {
     width: 50%;
@@ -441,25 +451,25 @@ nav {
     padding-top: 80px;
 }
 .choise-item-big {
-    width: 300px !important;
-    height: 430px !important;
+    width: 410px !important;
+    height: 490px !important;
     margin-right: 40px;
     margin-bottom: 0 !important; 
     transition: all .2s ease-in;
 }
 .choise-item-big:hover {
-    width: 320px !important;
-    height: 450px !important;
+    width: 430px !important;
+    height: 510px !important;
 }
 .choise-item {
-    width: 150px;
-    height: 200px;
+    width: 160px;
+    height: 230px;
     margin-bottom: 30px;
     transition: all .2s ease-in;
 }
 .choise-item:hover {
-    width: 170px;
-    height: 220px;
+    width: 180px;
+    height: 250px;
 }
 .choise-item {
     background-position: center !important;
@@ -474,6 +484,12 @@ nav {
 .chouse-item-wrapper-inner {
     display: flex;
     flex-direction: column;
+}
+.choise-resto .choise-item {
+    border: 1px solid #2181A6;
+}
+.choise-bar .choise-item {
+    border: 1px solid #FFF1FB;
 }
 
 /* Events */
@@ -579,6 +595,7 @@ nav {
     text-align: center;
     color: #2181A6;
     margin-bottom: 80px;
+    position: relative;
 }
 .team-slide {
     height: 545px;
@@ -800,8 +817,8 @@ nav {
     text-align: end;
     justify-content: space-between;
     margin-bottom: 50px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .contact-schedule-alert-item-pink {
     padding: 9px 20px;
@@ -827,17 +844,9 @@ nav {
     border-radius: 40px;
     transform: translateY(-20px);
 }
-.contact-schedule-alert-item:first-child {
-    margin-right: 5px;
-}
-.contact-schedule-alert-item-l {
-    margin-right: auto;
-}
-.contact-schedule-alert-item-r {
-    margin-left: auto;
-}
 .contact-schedule-alert-item {
     text-align: center;
+    margin: 0 auto;
 }
 .contact-content h4 {
     font-size: 24px;
@@ -850,6 +859,19 @@ nav {
 }
 .contact-map {
     background: #333;
+}
+.map-marker1 div {
+    font-family: 'ZillaSlab-Regular';
+    background: #FF92E0;
+    border-radius: 17px;
+    padding: 7px 14px;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #FFEAF9;
+    position: absolute;
+    transform: translateX(50px);
 }
 
 /* Footer */
@@ -884,11 +906,31 @@ footer {
 }
 
 
+.navbar-toggler svg rect {
+    fill: #FF92E0;
+}
+.collapsed svg rect {
+    fill: #FFE1F7;
+}
+.navbar {
+    background: #FFE1F7;
+}
+.nav-link {
+    color: #FF92E0;
+}
+.nav-colored {
+    background: transparent;
+}
+.nav-colored .nav-link{
+    color: #FFE1F7;
+}
 
-
-
-
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
+    header {
+       height: 790px; 
+    }
+}
+@media (max-width: 1280px) {
     header {
        height: 845px; 
     }
@@ -971,4 +1013,116 @@ footer {
         height: 1200px;
     }
 
+}
+@media (max-width: 1200px) {
+    header {
+        height: 650px; 
+    }
+    .news-item {
+        height: 250px;
+        max-width: 550px;
+    }
+    .restaurant-section {
+        height: 420px;
+    }
+    .bar-section {
+        height: 425px;
+    }
+    .bar-slider {
+        width: 70%;
+        height: 100.2%;
+        transform: translateY(-1px);
+    }
+    .events-section {
+        height: 450px;
+    }
+    .ig-section {
+        padding-bottom: 65px;
+    }
+    .contact-map {
+        height: 700px;
+    }
+}
+@media (max-width: 992px) {
+    .banner {
+        height: 100%;
+    }
+    header {
+        height: 500px;
+    }
+    .banner-content img {
+        width: 60%;
+    }
+    .navbar-toggler {
+        z-index: 1;
+        position: absolute;
+    }
+    .navbar-absolute {
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+    }
+    .navbar {
+        width: 500px;
+    }
+    .navbar-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 24px;
+    }
+    .navbar-buttons button {
+        border: 0;
+        padding: 0;
+        margin-bottom: 8px;
+        color: #FF92E0;
+    }
+    .navbar-buttons button svg path{
+        fill: #FF92E0;
+    }
+    .restaurant-section {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .restaurant-slider {
+        width: 100%;
+        height: 500px;
+    }
+    .restaurant-text {
+        padding-bottom: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .bar-section {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    .bar-slider {
+        width: 100%;
+        height: 500px;
+    }
+    .bar-text {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .bar-text-wrapper {
+        width: 100%;
+    }
+    .news-item {
+        margin: 0 auto;
+        height: 300px;
+        max-width: 500px;
+    }
+    .team-slide-img-wrapper {
+        height: 280px;
+    }
+    .team-slider {
+        max-width: 550px;
+        margin: 0 auto;
+    }
 }
