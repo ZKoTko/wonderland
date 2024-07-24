@@ -1280,6 +1280,13 @@ footer {
     .choise-items-slider .slick-list {
         padding-bottom: 20px !important;
     }
+    .choise-slider-slide {
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        box-shadow: 4px 10px 11px 0px #2181A669;
+        height: 290px;
+    }
    
     .choise-items-slider2 {
         display: flex;
@@ -1295,8 +1302,7 @@ footer {
     }   
     .choise-items-slider2  img {
         width: 100%;
-        box-shadow: 4px 10px 11px 0px #2181A669;
-        height: 317px;
+    
     }   
     .choise-items-slider2  .slick-center {
         margin: 0 22px;
