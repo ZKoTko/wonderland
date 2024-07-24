@@ -934,6 +934,10 @@ footer {
     color: #FFE1F7;
 }
 
+.choise-items-slider {
+    display: none;
+}
+
 @media (min-width: 1280px) {
     header {
        height: 790px; 
@@ -1247,6 +1251,122 @@ footer {
     .footer-item:nth-child(2)  {
         display: none;
     }
+    .choise-items-slider {
+        display: flex;
+    }
+    .choise-items-slider  .slick-arrow {
+        display: none !important;
+    }
+    .choise-items-slider  {
+        width: 100%;
+    }  
+    .choise-items-slider  .slick-slide {
+        width: 300px !important;
+    }   
+    .choise-items-slider  img {
+        width: 100%;
+        box-shadow: 4px 10px 11px 0px #2181A669;
+        height: 318px;
+    }   
+    .choise-items-slider  .slick-center {
+        margin: 0 22px;
+    }
+    .choise-items-slider .slick-track {
+        display: flex;
+    }
+    .choise-items-slider .slick-list {
+        padding-bottom: 20px !important;
+    }
+   
+    .choise-items-slider2 {
+        display: flex;
+    }
+    .choise-items-slider2  .slick-arrow {
+        display: none !important;
+    }
+    .choise-items-slider2  {
+        width: 100%;
+    }  
+    .choise-items-slider2  .slick-slide {
+        width: 300px !important;
+    }   
+    .choise-items-slider2  img {
+        width: 100%;
+        box-shadow: 4px 10px 11px 0px #2181A669;
+        height: 317px;
+    }   
+    .choise-items-slider2  .slick-center {
+        margin: 0 22px;
+    }
+    .choise-items-slider2 .slick-track {
+        display: flex;
+    }
+    .choise-items-slider2 .slick-list {
+        padding-bottom: 20px  !important;
+    }
+
+
+    .choise-items-slider  .slick-dots li button {
+        width: 10.25px;
+        height: 10.25px;
+        border: 1px solid #2181A6;
+        border-radius: 50%;
+        position: relative;
+        opacity: 1;
+    }
+    .choise-items-slider .slick-dots li button:before {
+        background: transparent;
+    }
+    .choise-items-slider .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #2181A6;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+    .choise-items-slider .slick-dots {
+        bottom: -30px;
+    }
+    .choise-items-slider .slick-dots li {
+        width: 10.25px;
+        height: 10.25px;
+    }
+
+    .choise-items-slider2  .slick-dots li button {
+        width: 10.25px;
+        height: 10.25px;
+        border: 1px solid #FFF1FB;
+        border-radius: 50%;
+        position: relative;
+        opacity: 1;
+    }
+    .choise-items-slider2 .slick-dots li button:before {
+        background: transparent;
+    }
+    .choise-items-slider2 .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #FFF1FB;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+    .choise-items-slider2 .slick-dots {
+        bottom: -30px;
+    }
+    .choise-items-slider2 .slick-dots li {
+        width: 10.25px;
+        height: 10.25px;
+    }
 }
 @media (max-width: 768px) {
     header {
@@ -1328,10 +1448,10 @@ footer {
         right: 0;
     }
     .bar-section .slick-arrow {
-        display: none;
+        display: none !important;
     }
     .restaurant-section .slick-arrow {
-        display: none;
+        display: none !important;
     }
     .events-title h3 {
         font-size: 50px;
@@ -1469,4 +1589,19 @@ footer {
     .footer-links img {
         width: 10%;
     }
+    .banner-content img {
+        width: 90%;
+    }
+    .mob-banner-back-1 {
+        display: block;
+        position: absolute;
+        right: 0;
+        height: 800px;
+        width: 534px;
+        background-repeat: no-repeat !important;
+        background-position: right !important;
+        background-size: contain !important;
+        bottom: -150px;
+    }
+    
 }
