@@ -41,6 +41,7 @@ h1 {
 header {
     background-color: #FF92E0;
     position: relative;
+    overflow: hidden;
 }
 nav {
     padding-top: 25px !important;
@@ -54,6 +55,9 @@ nav {
     padding: 0 40px;
     justify-content: flex-end;
     display: flex;
+}
+.mob-banner-back-1 {
+    display: none;
 }
 .nav-link {
     color: #FFF1FB;
@@ -128,6 +132,9 @@ nav {
     color: #fff;
     line-height: 22px;
 }
+.mob-banner-back1-dec {
+    display: none;
+}
 .banner-back-main {
     position: absolute;
     left: 0;
@@ -147,7 +154,9 @@ nav {
     background-position: right !important;
     background-size: contain !important;
 }
-
+.mob-banner-back-main {
+    display: none
+}
 
 /* Restaurant */
 .restaurant-section {
@@ -155,6 +164,7 @@ nav {
     background-color: #CDF1FF;
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 .restaurant-text {
     height: 100%;
@@ -323,8 +333,7 @@ nav {
 }
 .bar-slider {
     width: 70%;
-    height: 100.1%;
-    transform: translateY(-1px);
+    height: 100%;
 }
 .bar-text-wrapper {
     width: 30%;
@@ -462,13 +471,13 @@ nav {
     height: 510px !important;
 }
 .choise-item {
-    width: 160px;
+    width: 175px;
     height: 230px;
     margin-bottom: 30px;
     transition: all .2s ease-in;
 }
 .choise-item:hover {
-    width: 180px;
+    width: 190px;
     height: 250px;
 }
 .choise-item {
@@ -1014,6 +1023,28 @@ footer {
     }
 
 }
+@media (max-width: 1440px) {
+    .choise-item {
+        width: 135px;
+        height: 180px;
+        margin-bottom: 30px;
+    }
+    .choise-item:hover {
+        width: 150px;
+        height: 200px;
+    }
+    .choise-item-big {
+        width: 340px !important;
+        height: 390px !important;
+    }
+    .choise-item-big:hover {
+        width: 360px !important;
+        height: 410px !important;
+    }
+    .choise-section {
+        height: 830px;
+    }
+}
 @media (max-width: 1200px) {
     header {
         height: 650px; 
@@ -1030,8 +1061,6 @@ footer {
     }
     .bar-slider {
         width: 70%;
-        height: 100.2%;
-        transform: translateY(-1px);
     }
     .events-section {
         height: 450px;
@@ -1124,5 +1153,320 @@ footer {
     .team-slider {
         max-width: 550px;
         margin: 0 auto;
+    }
+    .choise-section {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .choise-resto, .choise-bar {
+        width: 100%;
+        height: 800px;
+    }
+    .ig-items-img-wrapper {
+        height: 600px !important;
+        margin-bottom: 25px !important;
+    }
+    .ig-items {
+        height: 600px !important;
+    }
+    .ig-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ig-title {
+        margin-bottom: 25px;
+    }
+    .team-back-1 {
+        width: 40%;
+    }
+    .team-back-3 {
+        width: 40%;
+    }
+    .team-back-2 {
+        width: 70%;
+    }
+    .team-slide-content {
+        padding: 30px;
+    }
+    .team-slide-wrapper {
+        margin: 0 auto;
+    }
+    .team-slide-img-wrapper {
+        padding: 0;
+    }
+    .team-slide-content h3 {
+        margin-bottom: 30px;
+    }
+    .team-slide-content h4 {
+        margin-bottom: 16px;
+    }
+    .team-slide {
+        height: fit-content;
+    }
+
+    .team-slider {
+        max-width: 500px;
+    }
+    .team-section {
+        height: fit-content;
+    }
+    .team-slide-img-wrapper {
+        height: 550px;
+    }
+    .footer-links a {
+        font-size: 18px;
+        line-height: 39.05px;
+    }
+    .footer-item h6 {
+        font-size: 22px;
+        line-height: 31.2px;
+    }
+    .restaurant-back-1 {
+        bottom: 120px;
+        right: -20px;
+        top: unset;
+    }
+    .restaurant-back-2 {
+        right: unset;
+        left: 0px;
+    }
+    .bar-back-2 {
+        right: unset;
+        left: 0;
+        bottom: -30px;
+    }
+    .bar-back-1 {
+        top: unset;
+        bottom: 30px;
+    }
+    .bar-back-3 {
+        right: 80px;
+        bottom: 133px;
+        left: unset;
+    }
+    .footer-item:nth-child(2)  {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        height: 770px;
+    }
+    .banner-back-main {
+        height: 450px;
+    }
+    .navbar {
+        width: 250px;
+    }
+    .banner-back-1 {
+        display: none;
+    }
+    .mob-banner-back-1 {
+        display: block;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat !important;
+        background-position: right !important;
+        background-size: contain !important;
+    }
+    .mob-banner-back1-dec {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 50%;
+    }
+    .banner-back-main {
+        display: none;
+    }
+    .mob-banner-back-main {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .banner-content {
+        justify-content: flex-start;
+        padding-top: 150px;
+    }
+    .choise-resto, .choise-bar {
+        height: 570px;
+    }
+    .choise-resto-title h2 {
+        font-size: 50px;
+        line-height: 85px;
+        margin-bottom: 50px;
+        padding-top: 35px;
+    }
+    .choise-bar-title h2 {
+        font-size: 50px;
+        line-height: 85px;
+        margin-bottom: 50px;
+        padding-top: 35px;
+    }
+    .choise-items-wrapper {
+        display: none;
+    }
+    .restaurant-back-1 {
+        width: 20%;
+    }
+    .restaurant-back-2 {
+        width: 25%;
+    }
+    .bar-back-2 {
+        width: 25%;
+    }
+    .bar-back-1 {
+        width: 20%;
+        bottom: 0px;
+    }
+    .bar-back-3 {
+        width: 20%;
+        right: 0;
+    }
+    .bar-section .slick-arrow {
+        display: none;
+    }
+    .restaurant-section .slick-arrow {
+        display: none;
+    }
+    .events-title h3 {
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 85px;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+    .events-section {
+        height: 630px;
+        background-position: 80% !important;
+    }
+    .news-item {
+        width: 325px;
+        height: 215px;
+    }
+    .news-item-text-bar {
+        height: 60px;
+    }
+    .news-item-text-bar p {
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        text-align: left;
+    }
+    .news-item-text-bar span {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        text-align: right;
+    }
+    .team-section h2 {
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 85px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .team-slider {
+        max-width: 330px;
+    }
+    .team-slider .slick-arrow {
+        display: none !important;
+    }
+    .team-slide-img-wrapper {
+        height: 275px;
+    }
+    .team-slide-content h3 {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        text-align: left;
+    }
+    .team-slide-content h4 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        text-align: left;
+    }
+    .team-slide-content p{
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.03em;
+        text-align: left;
+    }
+    .team-slide-content {
+        padding-bottom: 80px;
+    }
+    .team-slide-img {
+        background-position: 0% 0% !important;
+    }
+    .ig-title a {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: 0.03em;
+        text-align: left;
+    }
+    .ig-header button {
+        display: none;
+    }
+    .contact-content h3 {
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 55px;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+    .contact-content {
+        padding: 45px 12px;
+    }
+    .contact-schedule-alert-item {
+        height: fit-content;
+        font-size: 12px;
+        line-height: 24px;
+        padding: 3px 12px;
+        max-width: 150px;
+    }
+    .contact-schedule-item h5 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+    .contact-schedule-item p {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 68px;
+        height: 65px;
+    }
+    .footer-links a{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19.52px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+    .footer-links img {
+        width: 10%;
     }
 }
