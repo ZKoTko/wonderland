@@ -35,7 +35,8 @@ $(document).ready(function(){
         infinite: false, 
         speed: 300,
         initialSlide: 0,
-        dots: true  
+        dots: true,
+        vertical: false
     });
 });
 
@@ -49,6 +50,7 @@ $(document).ready(function(){
         infinite: false, 
         speed: 300, 
         initialSlide: 0,
-        dots: true   
+        dots: true,
+        vertical: false 
     });
 });

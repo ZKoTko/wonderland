@@ -496,9 +496,11 @@ nav {
 }
 .choise-resto .choise-item {
     border: 1px solid #2181A6;
+    box-shadow: 4px 10px 11px 0px #2181A669;
 }
 .choise-bar .choise-item {
     border: 1px solid #FFF1FB;
+    box-shadow: 4px 10px 11px 0px #2181A669;
 }
 
 /* Events */
@@ -915,9 +917,7 @@ footer {
 }
 
 
-.navbar-toggler svg rect {
-    fill: #FF92E0;
-}
+
 .collapsed svg rect {
     fill: #FFE1F7;
 }
@@ -931,15 +931,32 @@ footer {
     background: transparent;
 }
 .nav-colored .nav-link{
-    color: #FFE1F7;
+    color: #fff;
 }
-
 .choise-items-slider {
     display: none;
 }
 .choise-items-slider2 {
     display: none;
 }
+
+
+.collapsed .nav-b {
+    display: block;
+}
+.collapsed .nav-x {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 1280px) {
     header {
@@ -1078,6 +1095,14 @@ footer {
     .contact-map {
         height: 700px;
     }
+    .choise-section {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .choise-resto, .choise-bar {
+        width: 100%;
+        height: 800px;
+    }
 }
 @media (max-width: 992px) {
     .banner {
@@ -1092,6 +1117,8 @@ footer {
     .navbar-toggler {
         z-index: 1;
         position: absolute;
+        top: 10px;
+        right: 10px;
     }
     .navbar-absolute {
         position: absolute;
@@ -1161,14 +1188,8 @@ footer {
         max-width: 550px;
         margin: 0 auto;
     }
-    .choise-section {
-        flex-direction: column;
-        height: fit-content;
-    }
-    .choise-resto, .choise-bar {
-        width: 100%;
-        height: 800px;
-    }
+    
+    
     .ig-items-img-wrapper {
         height: 600px !important;
         margin-bottom: 25px !important;
@@ -1264,12 +1285,11 @@ footer {
         width: 100%;
     }  
     .choise-items-slider  .slick-slide {
-        width: 300px !important;
+        margin: 0 22px;
     }   
     .choise-items-slider  img {
         width: 100%;
         box-shadow: 4px 10px 11px 0px #2181A669;
-        height: 318px;
     }   
     .choise-items-slider  .slick-center {
         margin: 0 22px;
@@ -1285,7 +1305,12 @@ footer {
         background-repeat: no-repeat !important;
         background-size: cover !important;
         box-shadow: 4px 10px 11px 0px #2181A669;
-        height: 290px;
+    }.choise-slider-slide div {
+        width: 100%;
+        height: 100%;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
    
     .choise-items-slider2 {
@@ -1297,9 +1322,7 @@ footer {
     .choise-items-slider2  {
         width: 100%;
     }  
-    .choise-items-slider2  .slick-slide {
-        width: 300px !important;
-    }   
+
     .choise-items-slider2  img {
         width: 100%;
     
@@ -1403,7 +1426,7 @@ footer {
     .mob-banner-back1-dec {
         display: block;
         position: absolute;
-        top: 0;
+        top: -50px;
         left: 0;
         height: 50%;
         width: 50%;
@@ -1611,6 +1634,10 @@ footer {
         background-position: right !important;
         background-size: contain !important;
         bottom: -150px;
+    }
+    .choise-resto, .choise-bar {
+        height: fit-content;
+        padding-bottom: 50px;
     }
     
 }
