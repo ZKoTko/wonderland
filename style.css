@@ -132,7 +132,7 @@ nav {
     color: #fff;
     line-height: 22px;
 }
-.mob-banner-back1-dec {
+.mob-banner-back1-dec, .mob-banner-back2-dec1, .mob-banner-back2-dec2, .mob-banner-back3-dec1, .mob-banner-back3-dec2, .mob-banner-back3-dec3 {
     display: none;
 }
 .banner-back-main {
@@ -142,7 +142,7 @@ nav {
     height: 100%;
     width: 100%;
     background-repeat: no-repeat !important;
-    background-position: left !important;
+    background-position: left bottom !important;
     background-size: contain !important;
 }
 .banner-back-1 {
@@ -152,6 +152,60 @@ nav {
     width: 100%;
     background-repeat: no-repeat !important;
     background-position: right !important;
+    background-size: contain !important;
+}
+.banner-back-2 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    background-repeat: no-repeat !important;
+    background-position: right bottom !important;
+    background-size: contain !important;
+}
+.banner-back-3 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 52%;
+    background-repeat: no-repeat !important;
+    background-position: right bottom !important;
+    background-size: contain !important;
+}
+.banner-back-4 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 45%;
+    background-repeat: no-repeat !important;
+    background-position: right bottom !important;
+    background-size: contain !important;
+}
+.banner-back-5 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 45%;
+    background-repeat: no-repeat !important;
+    background-position: right bottom !important;
+    background-size: contain !important;
+}
+.banner-back-6 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+    background-size: contain !important;
+}
+.banner-back-7 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 45%;
+    background-repeat: no-repeat !important;
+    background-position: right bottom !important;
     background-size: contain !important;
 }
 .mob-banner-back-main {
@@ -959,12 +1013,18 @@ footer {
 
 @media (min-width: 1280px) {
     header {
-       height: 790px; 
+       height: 850px; 
+    }
+    .header-first {
+        height: 750px;
     }
 }
 @media (max-width: 1280px) {
     header {
        height: 845px; 
+    }
+    .header-first {
+        height: 750px;
     }
 }
 @media (min-width: 1440px) {
@@ -978,7 +1038,7 @@ footer {
         height: 990px;
     }
     header {
-        height: 900px; 
+        height: 850px; 
     }
 }
 @media (min-width: 1600px) {
@@ -1406,7 +1466,7 @@ footer {
     .navbar {
         width: 250px;
     }
-    .banner-back-1 {
+    .banner-back-1, .banner-back-2, .banner-back-3, .banner-back-4, .banner-back-5, .banner-back-6, .banner-back-7 {
         display: none;
     }
     .mob-banner-back-1 {
@@ -1419,6 +1479,83 @@ footer {
         background-position: right !important;
         background-size: contain !important;
     }
+    .mob-banner-back-2 {
+        display: block;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 60%;
+        background-repeat: no-repeat !important;
+        background-position: right bottom !important;
+        background-size: contain !important;
+    }
+    .mob-banner-back-3 {
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 85%;
+        background-repeat: no-repeat !important;
+        background-position: left bottom !important;
+        background-size: contain !important;
+    }
+    .mob-banner-back-4 {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: unset;
+        height: 100%;
+        width: 90%;
+        background-repeat: no-repeat !important;
+        background-position: left bottom !important;
+        background-size: contain !important;
+    }
+    .mob-banner-back-5 {
+        display: block;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 80%;
+        background-repeat: no-repeat !important;
+        background-position: right bottom !important;
+        background-size: contain !important;
+    }
+    .mob-banner-back-6 {
+        display: block;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 82%;
+        background-repeat: no-repeat !important;
+        background-position: right bottom !important;
+        background-size: contain !important;
+    }
+    .mob-banner-back-7 {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: unset;
+        height: 100%;
+        width: 85%;
+        background-repeat: no-repeat !important;
+        background-position: left bottom !important;
+        background-size: contain !important;
+    }
+    #header3 .mob-banner-back-main {
+        transform: scaleX(-1);
+        left: unset;
+        right: 0;
+    }
+    #header4 .mob-banner-back-main {
+        transform: scaleX(-1);
+        left: unset;
+        right: 0;
+    }
+    #header7 .mob-banner-back-main {
+        transform: scaleX(-1);
+        left: unset;
+        right: 0;
+    }
     .mob-banner-back1-dec {
         display: block;
         position: absolute;
@@ -1426,6 +1563,46 @@ footer {
         left: 0;
         height: 50%;
         width: 50%;
+    }
+    .mob-banner-back2-dec1 {
+        display: block;
+        position: absolute;
+        top: -145px;
+        left: 50px;
+        height: 50%;
+        width: 30%;
+    }
+    .mob-banner-back2-dec2 {
+        display: block;
+        position: absolute;
+        top: -120px;
+        right: 90px;
+        height: 50%;
+        width: 17%;
+    }
+    .mob-banner-back3-dec1 {
+        display: block;
+        position: absolute;
+        top: -155px;
+        right: 120px;
+        height: 50%;
+        width: 30%;
+    }
+    .mob-banner-back3-dec2 {
+        display: block;
+        position: absolute;
+        top: -130px;
+        left: 80px;
+        height: 50%;
+        width: 15%;
+    }
+    .mob-banner-back3-dec3 {
+        display: block;
+        position: absolute;
+        top: -150px;
+        left: 30px;
+        height: 50%;
+        width: 30%;
     }
     .banner-back-main {
         display: none;
@@ -1435,10 +1612,11 @@ footer {
         position: absolute;
         left: 0;
         bottom: 0;
+        z-index: 2;
     }
     .banner-content {
         justify-content: flex-start;
-        padding-top: 150px;
+        padding-top: 120px;
     }
     .choise-resto, .choise-bar {
         height: 570px;
