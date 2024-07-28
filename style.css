@@ -957,7 +957,6 @@ footer {
 
 
 
-
 @media (min-width: 1280px) {
     header {
        height: 790px; 
@@ -1275,9 +1274,6 @@ footer {
     .footer-item:nth-child(2)  {
         display: none;
     }
-    .choise-items-slider {
-        display: flex;
-    }
     .choise-items-slider  .slick-arrow {
         display: none !important;
     }
@@ -1448,15 +1444,15 @@ footer {
         height: 570px;
     }
     .choise-resto-title h2 {
-        font-size: 50px;
-        line-height: 85px;
-        margin-bottom: 50px;
+        font-size: 40px;
+        line-height: 65px;
+        margin-bottom: 30px;
         padding-top: 35px;
     }
     .choise-bar-title h2 {
-        font-size: 50px;
-        line-height: 85px;
-        margin-bottom: 50px;
+        font-size: 40px;
+        line-height: 65px;
+        margin-bottom: 30px;
         padding-top: 35px;
     }
     .choise-items-wrapper {
@@ -1639,5 +1635,10 @@ footer {
         height: fit-content;
         padding-bottom: 50px;
     }
-    
+    .choise-items-slider .slick-arrow {
+        display: inline-block !important; 
+    }
+    .choise-items-slider {
+        display: flex;
+    }
 }
